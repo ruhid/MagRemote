@@ -4,7 +4,7 @@ Remote Magstim device control UI over the serial based on [MagPy by nicolasmcnai
 
 Installation requires PyQt and MagPy with it dependecies
 
-##Using
+## Using
 Run run_magremote.py file, choose serial port for magstim devices, wait cuple of seconds for connection. 
 
 ARM: arms coils
