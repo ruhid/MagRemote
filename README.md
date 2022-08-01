@@ -1,4 +1,5 @@
 # MagRemote
+## this is Ruhid Kerimovs Repo
 Remote Magstim device control UI over the serial based on [MagPy by nicolasmcnair](https://github.com/nicolasmcnair/magpy)
 
 
