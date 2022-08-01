@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QFileDialog, QMainWindow, QLineEdit, QWidget, \
     QLCDNumber, QSlider
-from tms_1 import *
+from magremote_ui import *
 from magpy import magstim
 import serial
 from serial.tools import list_ports

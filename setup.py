@@ -10,8 +10,7 @@ setup(
     author_email='',
     description='',
     install_requires=[
-        'magpy',
         'PyQt5',
-        'serial'
+        'pyserial'
       ],
 )
