@@ -13,7 +13,7 @@ from math import floor
 from time import sleep
 from multiprocessing import Queue, Process
 from functools import partial
-from yaml import load
+import yaml
 from ast import literal_eval
 
 # Switch timer based on python version and platform
@@ -80,14 +80,18 @@ class serialPortController(Process):
         N.B. This should be called via start() from the parent Python process.
         """
         # N.B. most of these settings are actually the default in PySerial, but just being careful.
-        self._port = serial.Serial(port=self._address,
-                                   baudrate=9600,
-                                   bytesize=serial.EIGHTBITS,
-                                   stopbits=serial.STOPBITS_ONE,
-                                   parity=serial.PARITY_NONE,
-                                   xonxoff=False)
+        try:
+            self._port = serial.Serial(port=self._address,
+                                       baudrate=9600,
+                                       bytesize=serial.EIGHTBITS,
+                                       stopbits=serial.STOPBITS_ONE,
+                                       parity=serial.PARITY_NONE,
+                                       xonxoff=False)
+            self._port.setRTS(False)
+        except Exception as e:
+            print(e)
         # Make sure the RTS pin is set to off
-        self._port.setRTS(False)
+
         # Set up version compatibility
         if int(serial.VERSION.split('.')[0]) >= 3:
             self._port.write_timeout = 0.3
@@ -800,7 +804,7 @@ class Rapid(Magstim):
     __location__ = realpath(join(getcwd(), dirname(__file__)))
     try:
         with open(join(__location__, 'rapid_config.yaml')) as yaml_file:
-            config_data = load(yaml_file)
+            config_data = yaml.load(yaml_file,Loader=yaml.FullLoader)
     except:
         DEFAULT_RAPID_TYPE = 0
         DEFAULT_VOLTAGE = 240
@@ -816,7 +820,7 @@ class Rapid(Magstim):
 
     # Load system info file
     with open(join(__location__, 'rapid_system_info.yaml')) as yaml_file:
-        system_info = load(yaml_file)
+        system_info = yaml.load(yaml_file,Loader=yaml.FullLoader)
     # Maximum allowed rTMS frequency based on voltage and current power setting
     MAX_FREQUENCY = system_info['maxFrequency']
     # Minimum wait time (s) required for rTMS train. Power:Joules per pulse
