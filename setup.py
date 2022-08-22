@@ -4,10 +4,10 @@ setup(
     name='MagRemote',
     version='',
     packages=['magpy'],
-    url='',
+    url='https://github.com/ruhid/MagRemote',
     license='',
     author='ruhidkarimov',
-    author_email='',
+    author_email='ruhid.kerimov@gmail.com',
     description='',
     install_requires=[
         'PyQt5',
