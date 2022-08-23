@@ -1,4 +1,4 @@
-# MagPy_GUI
+# MagPy_UI
 
 This simple UI is created for our projects in Transcranial magnetic stimulation (TMS) laborotory,  and used to control over the serial Magstim TMS device based on original work of [MagPy by nicolasmcnair](https://github.com/nicolasmcnair/magpy) which helped a lot to save time required for one study.
 
