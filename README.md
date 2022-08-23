@@ -20,9 +20,8 @@ Run run_magremote.py file, choose serial port for magstim devices, wait cuple of
 ![Screenshot](MagRemote.png)
 
 ARM: arms coils <br/>
-FIRE: fires <br/>
+FIRE: fires TMS stimulus. It is for control purposes only, but may be for simultaneous EMG recording trigger out of Magstim devices can be used. Needs to be tested.   <br/>
 SYNCRONISE: syncronises settings between device and program <br/>
 
-LCD numbers show feedback from device
-Coil temperature gages are available to monitor device temperature status
+LCD numbers show feedback from device Coil status. 
 
