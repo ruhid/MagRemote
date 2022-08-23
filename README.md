@@ -1,4 +1,4 @@
-# MagRemote
+# MagPy_GUI
 
 This simple UI is created for our projects in Transcranial magnetic stimulation (TMS) laborotory,  and used to control over the serial Magstim TMS device based on original work of [MagPy by nicolasmcnair](https://github.com/nicolasmcnair/magpy) which helped a lot to save time required for one study.
 
@@ -6,8 +6,8 @@ This simple UI is created for our projects in Transcranial magnetic stimulation 
 Installation requires PyQt and MagPy with it dependecies
 
 ```python
-git clone https://github.com/ruhid/MagRemote
-python -m pip install './MagRemote'
+git clone https://github.com/ruhid/MagPy_UI
+python -m pip install './MagPy_UI'
 ```
 If some error happens, installation of pyserial and PyQt5 for your system will be enough 
 
