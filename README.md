@@ -16,6 +16,8 @@ Tested on Windows and MacOS Monterey(Installing PyQt5 on apple silicon can be a 
 ## Using
 Run run_magremote.py file, choose serial port for magstim devices, wait cuple of seconds for connection. 
 
+![Screenshot](MagRemote.png)
+
 ARM: arms coils <br/>
 FIRE: fires <br/>
 SYNCRONISE: syncronises settings between device and program <br/>
