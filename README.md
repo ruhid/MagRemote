@@ -24,5 +24,5 @@ FIRE: fires <br/>
 SYNCRONISE: syncronises settings between device and program <br/>
 
 LCD numbers show feedback from device
-
+Coil temperature gages are available to monitor device temperature status
 
