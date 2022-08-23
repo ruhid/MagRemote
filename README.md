@@ -31,6 +31,6 @@ LCD numbers show feedback from device Coil status.
  
 - Sometimes serial connection can drop and it freezes UI, may be it is related to my serial devices <br/>
 - Disconnection doesn't  work properly <br/>
-- Not tested on Linux <br/>
+- Not tested on Linux yet <br/>
 
 
