@@ -17,7 +17,9 @@ Tested on Windows, Linux and MacOS Monterey(Installing PyQt5 on apple silicon ca
 ## Using
 Run run_magremote.py file, choose serial port for magstim devices, wait cuple of seconds for connection. 
 
-![Screenshot](MagPy_UI.PNG)
+![Screenshot](MagPy_UI.PNG) <br/>
+![Screenshot](MagPy_UI_setup.PNG)
+
 
 - ARM: arms coils <br/>
 - FIRE: fires TMS stimulus. It is for control purposes only, but may be for simultaneous EMG recording trigger out of Magstim devices can be used. Needs to be tested.   <br/>
