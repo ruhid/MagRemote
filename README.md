@@ -11,7 +11,7 @@ python -m pip install './MagPy_UI'
 ```
 If some error happens, installation of pyserial and PyQt5 for your system will be enough 
 
-Tested on Windows and MacOS Monterey(Installing PyQt5 on apple silicon can be a bit tricky, but possible. Follow online instructions)
+Tested on Windows, Linux and MacOS Monterey(Installing PyQt5 on apple silicon can be a bit tricky, but possible. Follow online instructions). 
 
 
 ## Using
@@ -31,6 +31,5 @@ LCD numbers show feedback from device Coil status.
  
 - Sometimes serial connection can drop and it freezes UI, may be it is related to my serial devices <br/>
 - Disconnection doesn't  work properly <br/>
-- Not tested on Linux yet <br/>
 
 
